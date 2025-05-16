@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <div class="calculator-container">
+        <div class="theme-toggle">
+            <button id="themeToggle" aria-label="Cambiar tema">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+        
+        <div class="calculator">
+            <div class="display-container">
+                <div id="history" class="history"></div>
+                <div id="display" class="display">0</div>
+            </div>
+            
+            <div class="keypad">
+                <!-- Primera fila -->
+                <button class="btn function" data-action="clear">C</button>
+                <button class="btn function" data-action="backspace">⌫</button>
+                <button class="btn function" data-action="percent">%</button>
+                <button class="btn operator" data-action="divide">÷</button>
+
+                <!-- Segunda fila -->
+                <button class="btn function" data-action="sin">sin</button>
+                <button class="btn number">7</button>
+                <button class="btn number">8</button>
+                <button class="btn number">9</button>
+                <button class="btn operator" data-action="multiply">×</button>
+
+                <!-- Tercera fila -->
+                <button class="btn function" data-action="cos">cos</button>
+                <button class="btn number">4</button>
+                <button class="btn number">5</button>
+                <button class="btn number">6</button>
+                <button class="btn operator" data-action="subtract">-</button>
+
+                <!-- Cuarta fila -->
+                <button class="btn function" data-action="tan">tan</button>
+                <button class="btn number">1</button>
+                <button class="btn number">2</button>
+                <button class="btn number">3</button>
+                <button class="btn operator" data-action="add">+</button>
+
+                <!-- Quinta fila -->
+                <button class="btn function" data-action="log">log</button>
+                <button class="btn function" data-action="pi">π</button>
+                <button class="btn number">0</button>
+                <button class="btn number">.</button>
+                <button class="btn equals" data-action="calculate">=</button>
+
+                <!-- Sexta fila -->
+                <button class="btn function" data-action="sqrt">√</button>
+                <button class="btn function" data-action="power">x²</button>
+                <button class="btn function" data-action="factorial">n!</button>
+                <button class="btn function" data-action="exp">EXP</button>
+                <button class="btn function" data-action="ans">ANS</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
